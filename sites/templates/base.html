@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TB Winner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/docs.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL }}ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}ico/apple-touch-icon-114x114.png">
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="0">
+
+<div class="sandbar">
+    <div id="gc-googlebar">
+        <a href="{%url idx %}" id="gc-logo">
+            <img alt="智慧赢家" src="{{ STATIC_URL }}img/developers-logo.png">
+        </a>
+
+        <div class="gc-social">
+            <a href="{%url newfeatures %}"><span class="badge badge-important">新功能上线啦!</span></a>
+            <span id="gc_user">   欢迎你,<strong>timo_jiang</strong>   </span>
+            <a {% ifequal current_url 'userprofile' %} class="button_active"{% else %}  class="button" {% endifequal %} href="../userprofile">用户中心</a>
+            <a {% ifequal current_url 'helpcenter' %} class="button_active"{% else %}  class="button" {% endifequal %} href="../helpcenter">使用手册</a>
+            <a class="button" href="../logout">退出</a>
+        </div>
+    </div>
+</div>
+<!-- Navbar
+    ================================================== -->
+    <div class="navbar">
+
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li {% ifequal current_url 'idx' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url idx %}">首页</a>
+                        </li>
+                        <li {%ifequal current_url 'promo' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url promo %}">促销活动</a>
+                        </li>
+                        <li {% ifequal current_url "optcalendar" %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url optcalendar:idx %}">运营日历</a>
+                        </li>
+                        <li {% ifequal current_url 'optlog' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url optlog %}">运营报表</a>
+                        </li>
+                        <li {% ifequal current_url 'opthelper' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url opthelper %}">店铺助手</a>
+                        </li>
+                        <li {% ifequal current_url 'optanalysis' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url optanalysis %}">运营分析</a>
+                        </li>
+                        <li {% ifequal current_url 'optcrm' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url optcrm %}">会员管理</a>
+                        </li>
+                        <li {% ifequal current_url 'socialsales' %} class="active"{% else %}  class="" {% endifequal %}>
+                            <a href="{%url socialsales %}">会员营销</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+       <div class="container">
+           {% block content %}
+           {% endblock %}
+        </div><!-- /container -->
+</div>
+
+<footer id="gc-footer">
+    <div id="gc-copyright">
+        <a href="/">
+            <img style="vertical-align:baseline; float: left" alt="智慧赢家" src="{{ STATIC_URL }}img/developers-logo-footer.png"  id="developers-logo-footer">
+        </a>
+        <ul>
+            <li><a href="{%url aboutus %}">关于我们</a></li>
+            <li><a href="{%url onlineservice %}">在线客服</a></li>
+            <li><a href="{%url contactus %}">联系我们</a></li>
+            <li><a href="{%url reportissue %}">报告错误</a></li>
+        </ul>
+    </div>
+
+    <div id="gc-language">
+        <ul>
+            <li>
+                © 2012  Top-Winner  版权所有
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</footer>
+
+    <script src="{{ STATIC_URL }}js/widgets.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/google-code-prettify/prettify.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-scrollspy.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-tab.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-tooltip.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-popover.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-button.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
+    <script src="{{ STATIC_URL }}js/application.js"></script>
+</body>
+</html>
