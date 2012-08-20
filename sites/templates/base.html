@@ -60,7 +60,7 @@
                             <a href="{%url promo %}">促销活动</a>
                         </li>
                         <li {% ifequal current_url "optcalendar" %} class="active"{% else %}  class="" {% endifequal %}>
-                            <a href="{%url optcalendar:idx %}">运营日历</a>
+                            <a href="{%url optcalendar:optcalendar %}">运营日历</a>
                         </li>
                         <li {% ifequal current_url 'optlog' %} class="active"{% else %}  class="" {% endifequal %}>
                             <a href="{%url optlog %}">运营报表</a>
