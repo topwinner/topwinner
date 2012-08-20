@@ -1,5 +1,6 @@
-from django.conf.urls.defaults import patterns, urls
+from django.conf.urls import patterns, include, url
+from promo import views
 
 urlpatterns = patterns('',
-    #url(r'^$', views.index, name='app_index'),
+    url(r'^$', views.index, name='promo_index'),
 )

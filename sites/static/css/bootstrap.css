@@ -158,7 +158,7 @@ textarea {
 body {
   margin: 0;
   font-family:"微软雅黑",Microsoft YaHei,"宋体",arial;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 22px;
   color: #444;
   background-color:#FFF;
@@ -3776,6 +3776,7 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   left: 0;
   display: block;
+  font-size: 16px;
   float: left;
   margin: 0 10px 0 0;
   font-weight: bold;
@@ -3797,7 +3798,8 @@ input[type="submit"].btn.btn-mini {
   color: #999999;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .navbar .btn {
@@ -3816,19 +3818,27 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
   color: #ffffff;
   background-color: #3D9400;
+  border: 0.8px solid #3D9400;
   'background-image: -moz-linear-gradient(center top , #3D9400, #398A00);
   font-weight: bold;
-  border: 0.8px solid #29691D;
+  font-size: 16px;
+  line-height: 19px;
+
+  padding: 9px 10px 11px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
     background-color: #0088CC;
-    border: 0.8px solid #29691D;
+    border: 0.8px solid #FFFFFF;
     color: #FFFFFF;
     font-weight: bold;
+    border: 0.8px solid #0088CC;
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 19px;
+    padding: 9px 10px 11px;
 }
 
 .navbar .divider-vertical {
@@ -5024,7 +5034,7 @@ a.badge:hover {
 
 #gc-googlebar .gc-social {
     float: right;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: -1px;
 }
 
@@ -5050,7 +5060,7 @@ a.badge:hover {
     color: #666666;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     height: 27px;
     line-height: 27px;
@@ -5068,7 +5078,7 @@ a.badge:hover {
     -moz-transition-duration: 0.218s;
     -moz-transition-property: all;
     text-decoration: none;
-    background-color: #0088CC;
+    font-size: 16px;
     background-image: -moz-linear-gradient(center top , #3D9400, #398A00);
     font-weight: bold;
     border: 0.8px solid #29691D;
@@ -5077,7 +5087,6 @@ a.badge:hover {
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
     font-weight: bold;
     height: 27px;
     line-height: 27px;
@@ -5104,7 +5113,7 @@ a.badge:hover {
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     height: 27px;
     line-height: 27px;
@@ -5128,4 +5137,6 @@ a.badge:hover {
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }

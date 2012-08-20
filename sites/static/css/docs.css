@@ -812,7 +812,60 @@ form.well {
     font-style: inherit;
     font-weight: inherit;
     vertical-align: baseline;
+    font-weight: bold;
+    font-size: 16px;
 }
+
+#gc-footer #gc-copyright a{
+    -moz-box-orient: vertical;
+    -moz-box-sizing: content-box;
+    -moz-transition-duration: 0.218s;
+    -moz-transition-property: all;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.8px solid #29691D;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 2px 2px;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#gc-footer #gc-copyright a:hover{
+    -moz-box-orient: vertical;
+    -moz-box-sizing: content-box;
+    -moz-transition-duration: 0.218s;
+    -moz-transition-property: all;
+    text-decoration: none;
+    background-color: #3D9400;
+    background-image: -moz-linear-gradient(center top , #3D9400, #398A00);
+    font-weight: bold;
+    border: 0.8px solid #29691D;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 2px 2px;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
 #gc-footer #gc-language {
     float: right;
     text-align: right;

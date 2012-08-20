@@ -18,10 +18,8 @@ urlpatterns = patterns('',
     #url(r'^simple_todo_site/', include('simple_todo_site.foo.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url('^$', 'views.index', name='idx'),
@@ -29,19 +27,20 @@ urlpatterns = patterns('',
     url(r'^newfeatures/', 'views.newfeatures', name='newfeatures'),
     url(r'^userprofile/', 'views.userprofile', name='userprofile'),
     url(r'^helpcenter/', 'views.helpcenter', name='helpcenter'),
-    url(r'^promo/', 'promo.views.index', name='promo'),
-    url(r'^optanalysis/', 'optanalysis.views.index', name='optanalysis'),
-    url(r'^optcrm/', 'optcrm.views.index', name='optcrm'),
-    url(r'^opthelper/', 'opthelper.views.index', name='opthelper'),
-    url(r'^optlog/', 'optlog.views.index', name='optlog'),
-    url(r'^socialsales/', 'socialsales.views.index', name='socialsales'),
-    url(r'^ui/', include('ui.urls','ui')),
-    url(r'^optcalendar/', include('optcalendar.urls','optcalendar')),
-
     url(r'^aboutus/', 'views.aboutus', name='aboutus'),
     url(r'^contactus/', 'views.contactus', name='contactus'),
     url(r'^reportissue/', 'views.reportissue', name='reportissue'),
     url(r'^onlineservice/', 'views.onlineservice', name='onlineservice'),
+
+    url(r'^promo/', include('promo.urls','promo')),
+    url(r'^optcalendar/', include('optcalendar.urls','optcalendar')),
+    url(r'^optanalysis/',  include('optanalysis.urls','optanalysis')),
+    url(r'^optlog/',include('optlog.urls','optlog')),
+    url(r'^opthelper/', include('opthelper.urls','opthelper')),
+    url(r'^optcrm/', include('optcrm.urls','optcrm')),
+    url(r'^socialsales/',include('socialsales.urls','socialsales')),
+
+    url(r'^ui/', include('ui.urls','ui')),
     # url(r'^api/', include(v1_api.urls)),
 )
 
