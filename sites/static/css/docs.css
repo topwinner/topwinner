@@ -9,15 +9,15 @@
 /* Body and structure
 -------------------------------------------------- */
 body {
-  position: relative;
-  padding-top: 0px;
-  background-color: #fff;
-  background-image: url(../img/grid-18px-masked.png);
-  background-repeat: repeat-x;
-  background-position: 0 40px;
+
 }
 
-
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    color: #222222;
+    background: url("../img/bg.jpg") repeat scroll 0 0 #767676;
+}
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 .navbar-fixed-top .brand {
@@ -953,4 +953,250 @@ form.well {
 }
 #gc-footer > div li, #gc-topnav > div li, #gc-appnav > div li {
     padding: 0;
+}
+
+#launcher {
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) inset, 0 -1px 0 rgba(255, 255, 255, 0.25);
+    display: -moz-box;
+    width: 100%;
+}
+#restorePreviousSessionSeparator {
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)), -moz-linear-gradient(rgba(3, 14, 27, 0), rgba(3, 14, 27, 0.2), rgba(3, 14, 27, 0)), -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+    background-position: left top, center center, right bottom;
+    background-repeat: no-repeat;
+    background-size: 1px auto;
+    height: 116px;
+    margin: 0 10px;
+    width: 3px;
+}
+
+.launchButton:hover {
+    background-color: rgba(3, 14, 27, 0.03);
+    border-color: rgba(23, 51, 78, 0.15) rgba(23, 51, 78, 0.17) rgba(23, 51, 78, 0.2);
+}
+.launchButton:hover:active {
+    -moz-transition-duration: 0ms;
+    background-image: -moz-linear-gradient(rgba(3, 14, 27, 0.02), rgba(3, 14, 27, 0.05));
+    border-color: rgba(23, 51, 78, 0.2) rgba(23, 51, 78, 0.23) rgba(23, 51, 78, 0.25);
+    box-shadow: 0 1px 1px rgba(3, 14, 27, 0.05) inset, 0 0 1px rgba(3, 14, 27, 0.1) inset;
+}
+.launchButton {
+    -moz-box-orient: vertical;
+    -moz-transition-duration: 150ms;
+    -moz-transition-property: background-color, border-color, box-shadow;
+    background: none repeat scroll 0 0 padding-box transparent;
+    border: 1px solid transparent;
+    border-radius: 2.5px 2.5px 2.5px 2.5px;
+    color: #525C66;
+    cursor: pointer;
+    display: -moz-box;
+    font-size: 75%;
+    margin: 16px 1px;
+    max-height: 85px;
+    max-width: 176px;
+    min-width: 88px;
+    padding: 14px 6px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+#restorePreviousSession {
+    font-size: 90%;
+    max-width: none;
+}
+body[narrow] #restorePreviousSession {
+    font-size: 80%;
+}
+.launchButton:before {
+    display: block;
+    height: 32px;
+    line-height: 0;
+    margin-bottom: 6px;
+}
+#downloads:before {
+    content: url("chrome://browser/content/abouthome/downloads.png");
+}
+#bookmarks:before {
+    content: url("chrome://browser/content/abouthome/bookmarks.png");
+}
+#history:before {
+    content: url("chrome://browser/content/abouthome/history.png");
+}
+#apps:before {
+    content: url("chrome://browser/content/abouthome/apps.png");
+}
+#addons:before {
+    content: url("chrome://browser/content/abouthome/addons.png");
+}
+#sync:before {
+    content: url("chrome://browser/content/abouthome/sync.png");
+}
+#settings:before {
+    content: url("chrome://browser/content/abouthome/settings.png");
+}
+#restorePreviousSession:before {
+    -moz-margin-end: 8px;
+    content: url("chrome://browser/content/abouthome/restore-large.png");
+    display: inline-block;
+    height: 48px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 48px;
+}
+
+.alert-message {
+    background-color: #EEDC94;
+    background-image: -moz-linear-gradient(center top , #FCEEC1, #EEDC94);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    color: #404040;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    margin: 4px 4px 0 0;
+    padding: 2px 2px;
+}
+
+
+.github-btn {
+    height: 20px;
+    overflow: hidden;
+}
+.gh-btn, .gh-count, .gh-ico {
+    float: left;
+}
+.gh-btn, .gh-count {
+    border-radius: 3px 3px 3px 3px;
+    color: #555555;
+    cursor: pointer;
+    padding: 2px 5px 2px 4px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+    white-space: nowrap;
+}
+.gh-btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(center top , #FAFAFA, #EAEAEA);
+    background-repeat: no-repeat;
+    border-color: #D4D4D4 #D4D4D4 #BCBCBC;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+}
+.gh-btn:hover, .gh-btn:focus, .gh-btn:active {
+    background-color: #3072B3;
+    border-color: #518CC6 #518CC6 #2A65A0;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.gh-btn:hover, .gh-btn:focus {
+    background-image: -moz-linear-gradient(center top , #599BDC, #3072B3);
+}
+.gh-btn:active {
+    background-image: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) inset;
+}
+.gh-ico {
+    background: url("github-icons.png") no-repeat scroll 0 0 transparent;
+    height: 15px;
+    margin-right: 4px;
+    margin-top: -1px;
+    vertical-align: middle;
+    width: 14px;
+}
+.gh-btn:hover .gh-ico, .gh-btn:focus .gh-ico, .gh-btn:active .gh-ico {
+    background-position: -25px 0;
+}
+.gh-count {
+    background-color: #FAFAFA;
+    border: 1px solid #D4D4D4;
+    display: none;
+    margin-left: 4px;
+    position: relative;
+}
+.gh-count:hover, .gh-count:focus {
+    color: #4183C4;
+}
+.gh-count:before, .gh-count:after {
+    border-color: transparent;
+    border-style: solid;
+    content: " ";
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.gh-count:before {
+    border-right-color: #FAFAFA;
+    border-width: 4px 4px 4px 0;
+    left: -3px;
+    margin-top: -4px;
+    top: 50%;
+}
+.gh-count:after {
+    border-right-color: #D4D4D4;
+    border-width: 5px 5px 5px 0;
+    left: -4px;
+    margin-top: -5px;
+    top: 50%;
+    z-index: -1;
+}
+.github-btn-large {
+    height: 30px;
+}
+.github-btn-large .gh-btn, .github-btn-large .gh-count {
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 3px 10px 3px 8px;
+}
+.github-btn-large .gh-ico {
+    background-position: 0 -20px;
+    height: 23px;
+    width: 22px;
+}
+.github-btn-large:hover .gh-ico, .github-btn-large:focus .gh-ico, .github-btn-large:active .gh-ico {
+    background-position: -25px -20px;
+}
+.github-btn-large .gh-count {
+    margin-left: 6px;
+}
+.github-btn-large .gh-count:before {
+    border-width: 6px 6px 6px 0;
+    left: -5px;
+    margin-top: -6px;
+}
+.github-btn-large .gh-count:after {
+    border-width: 7px 7px 7px 0;
+    left: -6px;
+    margin-top: -7px;
+}
+.gh-ico {
+    background-image: url("github-icons-2x.png");
+    background-size: 50px 45px;
+}
+
+.page-header {
+    border-bottom: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 17px;
+}
+.page-header h1 {
+    margin-bottom: 8px;
 }

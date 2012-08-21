@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>TB Winner</title>
+    <title>Top Winner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -51,6 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
+                <div id="lb-userprofile" class="alert-message"><span>30</span>天使用期限.</span></div>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li {% ifequal current_url 'idx' %} class="active"{% else %}  class="" {% endifequal %}>
@@ -60,7 +61,7 @@
                             <a href="{%url promo:promo_index %}">促销活动</a>
                         </li>
                         <li {% ifequal current_url "optcalendar" %} class="active"{% else %}  class="" {% endifequal %}>
-                            <a href="{%url optcalendar:idx %}">运营日历</a>
+                            <a href="{%url optcalendar:optcalendar_index %}">运营日历</a>
                         </li>
                         <li {% ifequal current_url 'optlog_index' %} class="active"{% else %}  class="" {% endifequal %}>
                             <a href="{%url optlog:optlog_index %}">运营报表</a>
@@ -94,23 +95,15 @@
 
 <footer id="gc-footer">
     <div id="gc-copyright">
-        <a href="/">
-            <img style="vertical-align:baseline; float: left" alt="智慧赢家" src="{{ STATIC_URL }}img/developers-logo-footer.png"  id="developers-logo-footer">
-        </a>
-        <ul>
-            <li><a href="{%url aboutus %}">关于我们</a></li>
-            <li><a href="{%url onlineservice %}">在线客服</a></li>
-            <li><a href="{%url contactus %}">联系我们</a></li>
-            <li><a href="{%url reportissue %}">报告错误</a></li>
-        </ul>
+        <img style="vertical-align:baseline; float: left" alt="智慧赢家" src="{{ STATIC_URL }}img/developers-logo-footer.png"  id="developers-logo-footer">
+        <a href="{%url aboutus %}">关于我们</a>
+        <a href="{%url onlineservice %}">在线客服</a>
+        <a href="{%url contactus %}">联系我们</a>
+        <a href="{%url reportissue %}">报告错误</a>
     </div>
 
     <div id="gc-language">
-        <ul>
-            <li>
-                © 2012  Top-Winner  版权所有
-            </li>
-        </ul>
+        © 2012  Top-Winner  版权所有
     </div>
 
 
