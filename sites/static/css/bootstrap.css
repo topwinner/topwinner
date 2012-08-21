@@ -159,10 +159,10 @@ body {
   margin: 0;
   font-family:"微软雅黑",Microsoft YaHei,"宋体",arial;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 16px;
   color: #444;
-  #background: none repeat scroll 0 0 transparent;
-  background-color:#FFF;
+  background: none repeat scroll 0 0 transparent;
+  'background-color:#FFF;
 }
 
 a {
@@ -3572,7 +3572,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
   overflow: visible;
 }
 
@@ -3611,6 +3611,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar {
   color: #999999;
+  min-width: 1115px;
 }
 
 .navbar .brand:hover {
@@ -3993,8 +3994,9 @@ input[type="submit"].btn.btn-mini {
 }
 
 .breadcrumb {
+   border-radius: 4px 4px 4px 4px;
+  margin: 15px 20px 0;
   padding: 7px 14px;
-  margin: 0 0 18px;
   list-style: none;
     font-size: 14px;
     font-weight: bold;
@@ -5016,6 +5018,7 @@ a.badge:hover {
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
+    min-width: 1115px;
 }
 
 #gc-googlebar {

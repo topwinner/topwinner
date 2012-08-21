@@ -2,7 +2,42 @@
 
 {% block content %}
 
+    <div class="crumbs-and-feedback">
+        <ul class="breadcrumb">
+            <li class="active">
+                会员管理 <span class="divider"> >> </span>
+            </li>
+            <li>
+                <a class="label label-important" href="{%url idx %}">会员分租 </a> <span class="divider"> </span>
+            </li>
+            <li>
+                <span class="label label-success">销售数据分析</span> <span class="divider"> </span>
+            </li>
+            <li>
+                <a class="label label-important" href="{%url idx %}">宝贝关键字优化</a> <span class="divider"> </span>
+            </li>
+            <!--
+            <li class="pull-right"><a class="gh-btn">问题反馈</a> </li>
+            <li class="pull-right"><a class="gh-btn">Help+Support</a> <span class="divider">  </span></li>-->
+        </ul>
+    </div>
 
+
+
+    <div id="schedules_index_page" class="container-fluid page">
+        <div class="page-header"><h1>销售数据分析</h1>
+            <!--<div class="query"><div><form class="search-form"><input type="text" id="search" class="search_box ghosted" value="Search..." name="search"></form></div></div>
+            -->
+            <div class="clear"></div>
+        </div>
+
+        <div class="content-full">
+            <div class="flashes">
+            </div>
+            <div id="top-pagination"><div><div class="pagination-with-options"></div></div></div>
+            <div class="index-sched-page"><div><div class="alert-message block-message getting-started-message"><h3>Share on-call responsibility with schedules</h3><div class="content">An on-call schedule provides a simple and fair way for engineers to share on-call responsibilities.  When an incident is created, PagerDuty can be configured to assign it to a user according to an on-call schedule.<p><a class="hilite" href="/schedules/new">Create your first on-call schedule</a><br>and associate it with an escalation policy to get started.</p></div></div><div class="gs_example_screen"><img class="img_block" src="/assets/screens/newcal_getting_started.png"></div></div></div>
+            <div id="bottom-pagination"><div><div class="pagination-with-options"></div></div></div>
+            <div class="gs_example_screen"><img class="img_block" src="{{ MEDIA_URL }}help/services_getting_started.png"></div>
     <!-- Typography
    ================================================== -->
     <section id="typography">
@@ -23,14 +58,6 @@
 
 </section>
 
-     <!-- Footer
-      ================================================== -->
-      <footer class="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-      </footer>
 
     </div><!-- /container -->
 

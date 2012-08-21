@@ -1048,26 +1048,6 @@ body[narrow] #restorePreviousSession {
     width: 48px;
 }
 
-.alert-message {
-    background-color: #EEDC94;
-    background-image: -moz-linear-gradient(center top , #FCEEC1, #EEDC94);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    border-radius: 4px 4px 4px 4px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
-    color: #404040;
-    font-weight: bold;
-    position: relative;
-    float: right;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    font-size: 10px;
-    margin: 4px 4px 0 0;
-    padding: 2px 2px;
-}
-
-
 .github-btn {
     height: 20px;
     overflow: hidden;
@@ -1192,11 +1172,168 @@ body[narrow] #restorePreviousSession {
     background-size: 50px 45px;
 }
 
+
+#main {
+    margin: 0 auto;
+    min-width: 1115px;
+}
+.container-fluid {
+    min-width: 670px;
+    padding: 0 10px 0 260px;
+}
+.container-fluid .page-header {
+    margin-left: -260px;
+    margin-right: -10px;
+}
+.container-fluid.with-rightbar {
+    padding: 0 260px 0 10px;
+}
+.container-fluid.with-rightbar .page-header {
+    margin-left: -10px;
+    margin-right: -260px;
+}
+.container-fluid > .sidebar {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: -250px;
+    position: static;
+    width: 240px;
+}
+.container-fluid.with-rightbar > .sidebar {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: -250px;
+    width: 240px;
+}
+
+
+.container-fluid > .content {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.container-fluid.with-rightbar > .content {
+    margin-left: -10px;
+    margin-right: -260px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-fluid > .content-full {
+    margin-left: -260px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.page {
+    border-radius: 4px 4px 4px 4px;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+}
+
+.container-fluid.page {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
 .page-header {
-    border-bottom: 1px solid #DDDDDD;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    margin-bottom: 17px;
+    background-color: #DCEAF4;
+    border-bottom: 2px solid #BBD8E9;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+    padding: 4px;
 }
 .page-header h1 {
-    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 4px 0 0 8px;
+}
+.page-header form {
+    margin: 0;
+}
+.page-header .search_box {
+    clear: none;
+    float: right;
+    margin-right: 5px;
+    margin-top: 4px;
+    width: 200px;
+}
+.page-header .btn {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+.alert-message.block-message.current-plan {
+    font-size: 18px;
+    margin: 0 0 18px;
+    padding: 19px;
+    width: 940px;
+}
+.alert-message.block-message.current-plan strong {
+    font-size: 19px;
+}
+.alert-message.block-message.current-plan p .discounted-price {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.btn.danger, .alert-message.danger, .btn.danger:hover, .alert-message.danger:hover, .btn.error, .alert-message.error, .btn.error:hover, .alert-message.error:hover, .btn.success, .alert-message.success, .btn.success:hover, .alert-message.success:hover, .btn.info, .alert-message.info, .btn.info:hover, .alert-message.info:hover {
+    color: #FFFFFF;
+}
+
+.btn.icon.add:before {
+    background-position: 0 -288px;
+}
+.btn.icon:before {
+    background: url("../img/icons-9177569cb7b9d09bbf2885218768beca.png") no-repeat scroll 0 99px transparent;
+    content: "";
+    float: left;
+    height: 12px;
+    margin: 0 0.75em 0 -0.25em;
+    position: relative;
+    top: 2px;
+    width: 12px;
+}
+
+.btn.success {
+    background-color: #377937;
+    background-image: -moz-linear-gradient(center top , #42BB42, #377937);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn .close, .alert-message .close {
+    font-family: Arial,sans-serif;
+    line-height: 18px;
+}
+.btn.danger, .alert-message.danger, .btn.error, .alert-message.error {
+    background-color: #C43C35;
+    background-image: -moz-linear-gradient(center top , #EE5F5B, #C43C35);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+alert-message.success {
+    background-color: #57A957;
+    background-image: -moz-linear-gradient(center top , #62C462, #57A957);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn.info, .alert-message.info {
+    background-color: #339BB9;
+    background-image: -moz-linear-gradient(center top , #5BC0DE, #339BB9);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }

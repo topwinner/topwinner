@@ -10,6 +10,7 @@
     <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/docs.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/application.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -33,7 +34,8 @@
 
         <div class="gc-social">
             <a href="{%url newfeatures %}"><span class="badge badge-important">新功能上线啦!</span></a>
-            <span id="gc_user">   欢迎你,<strong>timo_jiang</strong>   </span>
+            <span id="gc_user"> 欢迎你,<strong>timo_jiang</strong></span>
+            <span class="badge badge-success">30天使用期限</span>
             <a {% ifequal current_url 'userprofile' %} class="button_active"{% else %}  class="button" {% endifequal %} href="../userprofile">用户中心</a>
             <a {% ifequal current_url 'helpcenter' %} class="button_active"{% else %}  class="button" {% endifequal %} href="../helpcenter">使用手册</a>
             <a class="button" href="{%url logout %}">退出</a>
@@ -53,7 +55,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <div id="lb-userprofile" class="alert-message"><span>30</span>天使用期限.</span></div>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li {% ifequal current_url 'idx' %} class="active"{% else %}  class="" {% endifequal %}>
@@ -80,6 +81,7 @@
                         <li {% ifequal current_url 'socialsales_index' %} class="active"{% else %}  class="" {% endifequal %}>
                             <a href="{%url socialsales:socialsales_index %}">会员营销</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -89,7 +91,7 @@
 
     </div>
 
-       <div class="container">
+       <div id="main">
            {% block content %}
            {% endblock %}
         </div><!-- /container -->
