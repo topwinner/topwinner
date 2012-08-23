@@ -1,10 +1,10 @@
 <div class="crumbs-and-feedback">
     <ul class="breadcrumb">
-        <li class="active">
-            <a href="{%url opthelper:opthelper_index %}">店铺助手</a> <span class="divider"> >> </span>
+        <li>
+            <a  class="badge {% ifequal opt_tools '' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:opthelper_index %}">店铺助手</a> <span class="divider">>></span>
         </li>
         <li>
-            <a class="badge {% ifequal opt_tools 'autoshelves' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:autoshelves %}">自动上架</a>
+            <a class="badge {% ifequal opt_tools 'autoshelves' %} badge-important {% else %} badge-info {% endifequal %}"  href="{%url opthelper:autoshelves %}">自动上架</a>
         </li>
         <li>
             <a class="badge {% ifequal opt_tools 'autoshowcase' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:autoshowcase %}">自动橱窗</a>
@@ -19,7 +19,7 @@
             <a class="badge {% ifequal opt_tools 'salesrecommend' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:salesrecommend %}">宝贝推荐</a>
         </li>
         <li>
-            <a class="badge {% ifequal opt_tools 'groupbutemplates' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:groupbutemplates %}">团购模版</a>
+            <a class="badge {% ifequal opt_tools 'groupbuytemplates' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:groupbuytemplates %}">团购模版</a>
         </li>
         <li>
             <a class="badge {% ifequal opt_tools 'praiserecommended' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:praiserecommended %}">好评推荐</a>
@@ -31,4 +31,5 @@
   <li class="pull-right"><a class="gh-btn">问题反馈</a> </li>
   <li class="pull-right"><a class="gh-btn">Help+Support</a> <span class="divider">  </span></li>-->
     </ul>
+
 </div>

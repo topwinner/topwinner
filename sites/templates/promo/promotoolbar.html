@@ -1,19 +1,19 @@
 <div class="crumbs-and-feedback">
     <ul class="breadcrumb">
-        <li class="active">
-            <a href="{%url promo:promo_index %}">促销活动</a> <span class="divider">>></span>
+        <li>
+            <a  class="badge {% ifequal promo_type '' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url promo:promo_index %}">促销活动</a> <span class="divider">>></span>
         </li>
         <li>
-            <a class="badge {% ifequal promo_type 'limitedtimediscount' %} badge-important {% else %} badge-info {% endifequal %}"" href="{%url promo:limitedtimediscount %}">限时打折</a>
+            <a class="badge {% ifequal promo_type 'limitedtimediscount' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url promo:limitedtimediscount %}">限时打折</a>
         </li>
         <li>
-            <a class="badge {% ifequal promo_type 'fullrewards' %} badge-important {% else %} badge-info {% endifequal %}"" href="{%url promo:fullrewards %}">满就送</a>
+            <a class="badge {% ifequal promo_type 'fullrewards' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url promo:fullrewards %}">满就送</a>
         </li>
         <li>
-            <a class="badge {% ifequal promo_type 'buymore' %} badge-important {% else %} badge-info {% endifequal %}"" href="{%url promo:buymore %}">多买优惠</a>
+            <a class="badge {% ifequal promo_type 'buymore' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url promo:buymore %}">多买优惠</a>
         </li>
         <li>
-            <a class="badge {% ifequal promo_type 'freeshipping' %} badge-important {% else %} badge-info {% endifequal %}"" href="{%url promo:freeshipping %}">包邮</a>
+            <a class="badge {% ifequal promo_type 'freeshipping' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url promo:freeshipping %}">包邮</a>
         </li>
 
     </ul>

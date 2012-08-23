@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.core.urlresolvers import resolve
 
 def index(request):
-    ctx = {'current_url':'promo_index'}
+    ctx = {'current_url':'promo_index','promo_type':'','tools_name':'首页'}
     return render(request, 'promo/promo.html', ctx)
 
 def limitedtimediscount(request):
