@@ -8,19 +8,110 @@
 
     <div id="schedules_index_page" class="container-fluid page">
         <div class="page-header"><h1>限时打折</h1>
-            <a href="/services/new" class="btn success add">Add New Service</a>
+            <!--<a href="/services/new" class="btn success add">Add New Service</a>-->
             <div class="clear"></div>
         </div>
         <div class="content-full">
             <div class="flashes">
             </div>
+            <div class="bs-docs-example">
+                <ul class="pager">
+                    <li class="previous disabled"><a href="#">← 上一步</a></li>
+                    <li class="next"><a href="#">下一步 →</a></li>
+                </ul>
+            </div>
 
-            <section id="misc">
-                <div class="marketing-byline">
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#lA" data-toggle="tab">设置活动信息</a></li>
+                    <li><a href="#lB" data-toggle="tab">选择参加活动的宝贝</a></li>
+                    <li><a href="#lC" data-toggle="tab">预览预览效果</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="lA">
+                        <form class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label" for="inputActivity">活动名称</label>
+                                <div class="controls">
+                                    <input type="text" id="inputActivity" placeholder="">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputActivityDesc">活动说明</label>
+                                <div class="controls">
+                                    <input type="text" id="inputActivityDesc" placeholder=".">
+                                    <span class="help-inline">2~5个字符</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputActivityStartTime">开始时间</label>
+                                <div class="controls">
+                                    <input type="text" id="inputActivityStartTime" placeholder="">
+                                    <span class="help-inline">开始时间</span>
+                                </div>
+                            </div>
 
-                    <img src="{{ MEDIA_URL }}uimockup/promo5.jpg" alt="" />
-                </div><!-- /row -->
-            </section>
+                            <div class="control-group">
+                                <label class="control-label" for="inputActivityEndTime" >结束时间</label>
+                                <div class="controls">
+                                    <input type="text" id="inputActivityEndTime" placeholder="">
+                                    <span class="help-inline">结束时间</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputActivityScop">打折范围</label>
+                                <div class="controls">
+                                    <input type="text" id="inputActivityScop" placeholder="">
+                                    <span class="help-inline">用户信息</span>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit">Save changes</button>
+                            <button class="btn" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="lB">
+
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img alt="" src="{{ STATIC_URL }}img/260x180.gif">
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img alt="" src="{{ STATIC_URL }}img/260x180.gif">
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img alt="" src="{{ STATIC_URL }}img/260x180.gif">
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img alt="" src="{{ STATIC_URL }}img/260x180.gif">
+                                    </a>
+                                </li>
+                                <li class="span4">
+                                    <a class="thumbnail" href="#">
+                                        <img alt="" src="{{ STATIC_URL }}img/260x180.gif">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="lC">
+                        <div class="progress progress-warning">
+                            <div class="bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /tabbable -->
+
         </div>
     </div>
 {% endblock %}

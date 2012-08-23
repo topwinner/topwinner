@@ -14,25 +14,43 @@
         <div class="content-full">
             <div class="flashes">
             </div>
-            <div id="top-pagination"><div><div class="pagination-with-options"></div></div></div>
-            <div class="index-sched-page"><div><div class="alert-message block-message getting-started-message">
-                <h3>社会化客户关系管理和营销,让你轻松和老顾客互动,老顾客的社会化营销引爆你的流量.</h3>
-                <h3>丰富多样的智能化的促销工具,配合店铺超级日历管理, 配合自动化得运营工具，让你的轻轻松松做店铺营销,流量倍增.,</h3>
-                <h3>自动化旺铺运营批量工具,让你的店铺 节省你50%时间</h3>
-                <h3>运营数据化分析工具,助你实现精准营销,</h3>
-                <div class="content">
-                </div></div>
-
-                <div class="gs_example_screen"><img class="img_block" src="/assets/screens/newcal_getting_started.png"></div></div></div>
 
 
-            <div id="bottom-pagination"><div><div class="pagination-with-options"></div></div></div>
-            <div class="gs_example_screen">
+    <section id="carousel">
 
-                <img src="{{ MEDIA_URL }}uimockup/home1.png" alt="">
+        <div class="bs-docs-example">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="" src="{{ STATIC_URL }}img/newcal_getting_started.png">
+                        <div class="carousel-caption">
+                            <h4>智能化的促销工具</h4>
+                            <p>丰富多样的智能化的促销工具,配合店铺超级日历管理, 配合自动化得运营工具，让你的轻轻松松做店铺营销,流量倍增.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="{{ STATIC_URL }}img/newcal_getting_started.png">
+                        <div class="carousel-caption">
+                            <h4>自动化批量工具</h4>
+                            <p>自动化旺铺运营批量工具,节省你50%时间.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="{{ STATIC_URL }}img/newcal_getting_started.png">
+                        <div class="carousel-caption">
+                            <h4>客户关系管理和营销</h4>
+                            <p>社会化客户关系管理和营销,让你轻松和老顾客互动,老顾客的社会化营销引爆你的流量</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
             </div>
-
         </div>
+
+
+    </section>
+
     </div>
 
 {% endblock %}
