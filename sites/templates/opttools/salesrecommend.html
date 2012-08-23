@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% include "opttools/opttoolbar.html" %}
+
+    <div id="schedules_index_page" class="container-fluid page">
+        <div class="page-header"><h1>{{ tools_name }}</h1>
+            <div class="clear"></div>
+        </div>
+
+        <div class="content-full">
+            <div class="flashes">
+            </div>
+
+            <!-- Project
+           ================================================== -->
+            <section id="docs">
+                <div class="marketing-byline">
+                    <img src="{{ MEDIA_URL }}uimockup/opthelp.png" alt="" />
+                </div><!-- /row -->
+            </section>
+
+        </div>
+    </div>
+
+{% endblock %}

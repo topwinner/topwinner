@@ -1,0 +1,34 @@
+<div class="crumbs-and-feedback">
+    <ul class="breadcrumb">
+        <li class="active">
+            <a href="{%url opthelper:opthelper_index %}">店铺助手</a> <span class="divider"> >> </span>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'autoshelves' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:autoshelves %}">自动上架</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'autoshowcase' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:autoshowcase %}">自动橱窗</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'bulkediting' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:bulkediting %}">批量修改</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'salespackage' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:salespackage %}">套餐营销</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'salesrecommend' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:salesrecommend %}">宝贝推荐</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'groupbutemplates' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:groupbutemplates %}">团购模版</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'praiserecommended' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:praiserecommended %}">好评推荐</a>
+        </li>
+        <li>
+            <a class="badge {% ifequal opt_tools 'watermarks' %} badge-important {% else %} badge-info {% endifequal %}" href="{%url opthelper:watermarks %}">水印标签</a>
+        </li>
+        <!--
+  <li class="pull-right"><a class="gh-btn">问题反馈</a> </li>
+  <li class="pull-right"><a class="gh-btn">Help+Support</a> <span class="divider">  </span></li>-->
+    </ul>
+</div>

@@ -4,30 +4,10 @@
 <!-- Masthead
 ================================================== -->
 
-    <div class="crumbs-and-feedback">
-        <ul class="breadcrumb">
-            <li class="active">
-                促销活动管理 <span class="divider">>></span>
-            </li>
-            <li>
-                <span class="badge badge-important">1</span><a href="{%url idx %}"> 创建活动</a> <span class="divider">>></span>
-            </li>
-            <li>
-                <span class="badge badge-important">2</span><a href="{%url idx %}"> 选择宝贝</a> <span class="divider">>></span>
-            </li>
-            <li>
-                <span class="badge badge-important">3</span><a href="{%url idx %}"> 应用模版</a> <span class="divider">>></span>
-            </li>
-            <li>
-                <span class="badge badge-important">4</span><a href="{%url idx %}"> 发布预告</a> <span class="divider"></span>
-            </li>
-         </ul>
-    </div>
-
-
+    {% include "promo/promotoolbar.html" %}
 
     <div id="schedules_index_page" class="container-fluid page">
-        <div class="page-header"><h1>促销活动</h1>
+        <div class="page-header"><h1>限时打折</h1>
          <a href="/services/new" class="btn icon success add">Add New Service</a>
         <div class="clear"></div>
     </div>

@@ -4571,6 +4571,11 @@ a.badge:hover {
   background-color: #b94a48;
 }
 
+.label-important,
+.badge-important  {
+    background-color: #b94a48;
+}
+
 .label-important[href],
 .badge-important[href] {
   background-color: #953b39;

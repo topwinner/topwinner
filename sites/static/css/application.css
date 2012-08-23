@@ -40,7 +40,19 @@ html, body {
 .breadcrumb li {
     display: inline;
     text-shadow: 0 1px 0 #FFFFFF;
+    padding: 1px 9px 2px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
 }
+
+.breadcrumb li > a:hover,
+.breadcrumb .active > a,
+.breadcrumb .active > a:hover {
+    color: #ffffff;
+    background-color: #468847;
+}
+
 .breadcrumb .divider {
     color: #BFBFBF;
     padding: 0 5px;
