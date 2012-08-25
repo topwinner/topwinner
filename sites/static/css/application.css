@@ -224,17 +224,7 @@ button.btn::-moz-focus-inner, input.btn[type="submit"]::-moz-focus-inner {
 .well blockquote {
     border-color: rgba(0, 0, 0, 0.15);
 }
-.modal-backdrop {
-    background-color: #000000;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10000;
-}
 
-.
 .ui-helper-hidden {
     display: none;
 }
@@ -1563,21 +1553,7 @@ table.fc-border-separate {
 }
 .fc-agenda .ui-resizable-resizing {
 }
-a {
-    color: #005C9C;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-pre {
-    font-family: monospace;
-    font-size: 12px;
-    line-height: 1.2em;
-}
-a.small {
-    font-size: 11px;
-}
+
 div.tooltip {
     background-color: #FCF9D7;
     border: 1px solid #C6C3A5;
@@ -1852,12 +1828,7 @@ div.popup_dialog div.errorExplanation h2 {
     font-size: 16px;
     margin-bottom: 5px;
 }
-* a.btn {
-    padding: 7px 14px 8px;
-}
-a {
-    cursor: pointer;
-}
+
 .expiry-warning {
     background-color: black;
     padding-bottom: 5px;
@@ -2083,10 +2054,7 @@ ul.breadcrumbs {
     color: green;
     font-weight: bold;
 }
-#main {
-    margin: 0 auto;
-    min-width: 1115px;
-}
+
 .container-fluid {
     min-width: 670px;
     padding: 0 10px 0 260px;
@@ -2177,6 +2145,7 @@ ul.breadcrumbs {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 20px;
+    min-height: 600px;
 }
 .page-header {
     background-color: #DCEAF4;
@@ -2529,9 +2498,6 @@ div.pagination a {
 }
 .twipsy.fade.in {
     opacity: 0.9;
-}
-.fade {
-    opacity: 0;
 }
 .twipsy-inner-no-max-width {
     max-width: none;

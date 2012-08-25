@@ -14,7 +14,7 @@ body {
 
 html {
     font-size: 100%;
-    overflow-y: scroll;
+    'overflow-y: scroll;
     color: #222222;
     background: url("../img/bg.jpg") repeat scroll 0 0 #767676;
 }
@@ -775,15 +775,16 @@ form.well {
 
 #gc-footer {
     background: none repeat scroll 0 0 #333333;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     vertical-align: baseline;
     display: block;
-    margin: 0;
     clear: both;
     overflow: hidden;
-    padding: 0 44px;
-
+    padding: 0;
+    margin-top:20px;
+    position: relative;
+    height: 40px;
 }
 #gc-footer > div {
     line-height: 44px;
@@ -813,7 +814,7 @@ form.well {
     font-weight: inherit;
     vertical-align: baseline;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #gc-footer #gc-copyright a{
@@ -829,7 +830,7 @@ form.well {
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     height: 27px;
     line-height: 27px;
@@ -855,7 +856,7 @@ form.well {
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     height: 27px;
     line-height: 27px;
@@ -1172,9 +1173,8 @@ body[narrow] #restorePreviousSession {
     background-size: 50px 45px;
 }
 
-
 #main {
-    margin: 0 auto;
+    margin: 0 auto 0,auto;
     min-width: 1115px;
 }
 .container-fluid {
@@ -1336,4 +1336,14 @@ alert-message.success {
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#wrapper{
+    min-width:980px;
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding:0;
+    vertical-align: baseline;
+    display: block;;
 }
