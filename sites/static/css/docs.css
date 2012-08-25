@@ -1347,3 +1347,27 @@ alert-message.success {
     vertical-align: baseline;
     display: block;;
 }
+
+input[type="submit"]{
+    background: url("../img/gradient.png") repeat-x scroll left bottom #E6E6E6;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: #666666;
+    display: block;
+    font-family: "ff-meta-web-pro","ff-meta-web-pro-1","ff-meta-web-pro-2",Arial,"Helvetica Neue",sans-serif;
+    font-weight: bold;
+    margin: 30px 5px 20px 0;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+input[type="submit"]:hover {
+    background-color: #8ECC4C;
+    border-color: #6B9939 #6B9939 #50732B;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"]:active{
+    box-shadow: none;
+}
