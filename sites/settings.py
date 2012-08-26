@@ -132,6 +132,8 @@ INSTALLED_APPS = (
       'dj_scaffold',
      'south',
     'tastypie',
+    'dajaxice',
+    'dajax',
 )
 
 # A sample logging configuration. The only tangible logging
